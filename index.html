@@ -1,0 +1,22 @@
+<html>
+<head> 
+<title> Yeah! I did it. </title>
+</head>
+<body>
+<h2> My Name is Harmanjot Kaur </h2>
+<p id="current-time"></p>
+<p id="current-date"></p>
+<script>
+  var currentTime = new Date();
+  var hours = currentTime.getHours();
+  var minutes = currentTime.getMinutes();
+  var seconds = currentTime.getSeconds();
+  var timeString = hours + ':' + minutes + ':' + seconds;
+  document.getElementById('current-time').innerHTML = timeString;
+
+  var currentDate = new Date();
+  var dateString = currentDate.toDateString();
+  document.getElementById('current-date').innerHTML = dateString;
+</script>
+</body>
+</html>
